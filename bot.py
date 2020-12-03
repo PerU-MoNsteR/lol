@@ -38,8 +38,8 @@ async def main():
     # We have to manually call "start" if we want an explicit bot token
     UniBorgBotClient = await TelegramClient(
         "UniBorgBot",
-        Config.APP_ID[0],
-        Config.API_HASH[0]
+        Config.APP_ID[1574543],
+        Config.API_HASH[993cca604560e984407664e5bf862b3a]
     ).start(bot_token=Config.TG_BOT_TOKEN)
     async with UniBorgBotClient:
         # Getting information about yourself
