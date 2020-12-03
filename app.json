@@ -1,0 +1,46 @@
+{
+    "name": "String-Session",
+    "description": "Generating String Session of Telegram Account mostly for Userbots.",
+    "repository": "",
+    "logo": "",
+    "keywords": [
+        "python",
+        "telegram"
+    ],
+    "buildpacks": [{
+    "url": "heroku/python"
+  }],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+    "env": {
+        "APP_NAME": {
+            "description": "Heroku App Name",
+            "value": "",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "Your bot token, as a string.",
+            "value": "",
+            "required": true
+        },
+        "API_KEY": {
+            "description": "Your Heroku Account API Key from https://dashboard.heroku.com/account ",
+            "value": "",
+            "required": true
+        },
+        "API_ID": {
+            "description": "Get from https://my.telegram.org",
+            "value": "",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Get from https://my.telegram.org",
+            "value": "",
+            "required": true
+        }
+    }
+}
