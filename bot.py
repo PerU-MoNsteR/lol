@@ -39,7 +39,7 @@ async def main():
     UniBorgBotClient = await TelegramClient(
         "UniBorgBot",
         Config.APP_ID[1574543],
-        Config.API_HASH[993cca604560e984407664e5bf862b3a]
+        Config.API_HASH[cca604560e984407664e5bf862b3a]
     ).start(bot_token=Config.TG_BOT_TOKEN)
     async with UniBorgBotClient:
         # Getting information about yourself
